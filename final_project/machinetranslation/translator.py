@@ -16,5 +16,9 @@ lt = LanguageTranslatorV3(version='{version}', authenticator = auth)
 lt.set_service_url(url)
 
 def englishToFrench(englishText):
-    
+    frenchText = lt.translate(text=englishText, model='en-fr').get_result()
     return frenchText
+
+def frenchToEnglish(frenchText):
+    englishText = lt.translate(text=frenchText, model='fr-en').get_result()
+    return englishText
