@@ -22,3 +22,5 @@ def englishToFrench(englishText):
 def frenchToEnglish(frenchText):
     englishText = lt.translate(text=frenchText, model='fr-en').get_result()
     return englishText
+
+# test
