@@ -1,7 +1,7 @@
-from translator import englishToFrench
-from translator import frenchToEnglish
+from translator import *
 
+
+print(englishToFrench('Hello'))
+print(frenchToEnglish("Bonjour"))
 print(englishToFrench(None))
 print(frenchToEnglish(None))
-print(englishToFrench("Hello"))
-print(frenchToEnglish("Bonjour"))
